@@ -3,66 +3,122 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #f3f4f6; 
+  font-family: 'Roboto', sans-serif; 
 }
+
 
 .container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  font-family: sans-serif;
+  transition: transform 0.2s ease-in-out;
 }
 
+
 h1 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
-  color: black;
+  color: #2d3748; 
+  font-weight: bold;
 }
+
 
 .file-input {
   margin: 20px 0;
 }
 
-.file-input input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2d3748;
+  font-weight: bold;
+  text-align: center;
 }
 
+
+.file-input input {
+  padding: 10px;
+  border: 2px solid #cbd5e0; 
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.file-input input:hover {
+  border-color: #4299e1; 
+}
+
+
 .upload-button {
-  background-color: blue;
+  background-color: #4299e1; 
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
   margin-top: 10px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .upload-button:hover {
-  background-color: darkblue;
+  background-color: #2b6cb0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+
 
 .transcription-result {
   margin-top: 30px;
   text-align: center;
-  color: black;
+  color: #2d3748; 
 }
 
-.transcription-result h2{
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: darkblue;
+.transcription-result h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #2b6cb0;
 }
 
 .transcription-result p {
-  background-color: #f8f9fa;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd
+  background-color: #edf2f7; 
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0; 
+  text-align: left; 
+  word-wrap: break-word; 
+  line-height: 1.5;
+  color: #2d3748; 
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .file-input input {
+    padding: 8px;
+  }
+
+  .upload-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .transcription-result p {
+    font-size: 13px;
+  }
 }
